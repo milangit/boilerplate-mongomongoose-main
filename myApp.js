@@ -78,7 +78,7 @@ Person = mongoose.model('Person', personSchema);
 
 // //----- **DO NOT EDIT BELOW THIS LINE** ----------------------------------
 
-// exports.PersonModel = Person;
+exports.PersonModel = Person;
 // exports.createAndSavePerson = createAndSavePerson;
 // exports.findPeopleByName = findPeopleByName;
 // exports.findOneByFood = findOneByFood;
