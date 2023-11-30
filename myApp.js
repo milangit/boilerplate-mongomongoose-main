@@ -9,7 +9,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 // require('dotenv').config();
 
 
-let Person;
+// let Person;
 
 const personSchema = new mongoose.Schema({
   name: {
@@ -20,7 +20,7 @@ const personSchema = new mongoose.Schema({
   favoriteFoods: [String]
 });
 
-Person = mongoose.model('PersonModel', personSchema);
+const Person = mongoose.model('Person', personSchema);
 
 
 
