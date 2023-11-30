@@ -1,0 +1,16 @@
+runtime: nodejs20
+
+instance_class: F1
+
+env_variables:
+  MONGO_URI: "mongodb+srv://fcc1:uoEUfP8h6VKOE2ei@cluster0.me3iit2.mongodb.net/?retryWrites=true&w=majority"
+
+handlers:
+- url: /public
+  static_dir: public
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+ 
