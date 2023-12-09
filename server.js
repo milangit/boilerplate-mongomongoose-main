@@ -46,7 +46,7 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
-app.get("/api", function (req, res) {
+async app.get("/api", function (req, res) {
 
   
   // store something
