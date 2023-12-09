@@ -50,13 +50,20 @@ app.get("/api", async function (req, res) {
 
   
   // store something
-  await s3.putObject({
-            Body: JSON.stringify({key:"value"}),
-            Bucket: "cyclic-delightful-crab-gabardine-eu-west-3",
-            Key: "some_files/my_file.json",
-        }).promise()
+  // await s3.putObject({
+  //           Body: JSON.stringify({key:"value"}),
+  //           Bucket: "cyclic-delightful-crab-gabardine-eu-west-3",
+  //           Key: "some_files/my_file.json",
+  //       }).promise()
+
+
+  let my_file = await s3.getObject({
+    Bucket: "cyclic-delightful-crab-gabardine-eu-west-3",
+    Key: "some_files/my_file.json",
+}).promise()
+
   
-  res.send("resp");
+  res.send(my_file);
 
   
 });
