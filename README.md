@@ -9,3 +9,5 @@ https://www.freecodecamp.org/learn/back-end-development-and-apis/mongodb-and-mon
 setup MongoDB Atlas
 https://www.freecodecamp.org/news/get-started-with-mongodb-atlas/
 
+recreate package-lock
+npm install --package-lock-only
