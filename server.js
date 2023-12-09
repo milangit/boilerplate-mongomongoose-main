@@ -44,6 +44,10 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
+app.get("/api", function (req, res) {
+  res.send("resp");
+});
+
 /*
 router.get("/file/*?", function (req, res, next) {
   if (req.params[0] === ".env") {
