@@ -160,6 +160,11 @@ router.post("/find-all-by-name", function (req, res, next) {
   });
 });
 
+router.get("/watch", function (req, res) {
+    res.send("test");
+});
+
+
 const findByFood = require("./myApp.js").findOneByFood;
 router.post("/find-one-by-food", function (req, res, next) {
   let t = setTimeout(() => {
